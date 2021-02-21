@@ -18,6 +18,7 @@ public class aboutUs extends JFrame{
             setIconImage(Toolkit.getDefaultToolkit().getImage("C:\\Users\\ram\\Desktop\\rohit.jpg"));
             setBackground(new Color(173, 216, 230));
             setBounds(500, 250, 700, 500);
+            setLocationRelativeTo(null);
 		
             contentPane = new JPanel();
             setContentPane(contentPane);

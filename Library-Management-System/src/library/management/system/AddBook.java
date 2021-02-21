@@ -29,6 +29,7 @@ public class AddBook extends JFrame implements ActionListener{
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel l1 = new JLabel("Name");
 	l1.setForeground(new Color(47, 79, 79));

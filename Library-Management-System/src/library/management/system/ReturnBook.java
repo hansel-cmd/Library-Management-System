@@ -49,6 +49,7 @@ public class ReturnBook extends JFrame implements ActionListener{
 	setContentPane(contentPane);
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel lblNewLabel = new JLabel("Book_id");
 	lblNewLabel.setForeground(new Color(0, 0, 0));
