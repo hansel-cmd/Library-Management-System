@@ -47,6 +47,7 @@ public class StudentDetails extends JFrame implements ActionListener{
 	setContentPane(contentPane);
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JScrollPane scrollPane = new JScrollPane();
 	scrollPane.setBounds(79, 133, 771, 288);

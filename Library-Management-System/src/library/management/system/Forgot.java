@@ -24,6 +24,7 @@ public class Forgot extends JFrame implements ActionListener{
 	setContentPane(contentPane);
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel l1 = new JLabel("Username");
 	l1.setFont(new Font("Tahoma", Font.BOLD, 13));

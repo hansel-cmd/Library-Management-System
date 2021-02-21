@@ -20,6 +20,7 @@ public class Home extends JFrame implements ActionListener{
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
+            setLocationRelativeTo(null);
 
             JLabel l1 = new JLabel("Library Management System");
             l1.setForeground(new Color(204, 51, 102));

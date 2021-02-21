@@ -43,6 +43,7 @@ public class BookDetails extends JFrame implements ActionListener{
         contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JScrollPane scrollPane = new JScrollPane();
 	scrollPane.setBounds(79, 133, 771, 282);

@@ -51,6 +51,7 @@ public class Loading extends JFrame implements Runnable {
             contentPane = new JPanel();
             setContentPane(contentPane);
             contentPane.setLayout(null);
+            setLocationRelativeTo(null);
 
             JLabel lbllibraryManagement = new JLabel("Yu Es See Library");
             lbllibraryManagement.setForeground(new Color(72, 209, 204));

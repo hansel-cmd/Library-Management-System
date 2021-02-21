@@ -26,6 +26,7 @@ public class IssueBook extends JFrame implements ActionListener{
 	setContentPane(contentPane);
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel l1 = new JLabel("Book_id");
 	l1.setFont(new Font("Tahoma", Font.BOLD, 14));

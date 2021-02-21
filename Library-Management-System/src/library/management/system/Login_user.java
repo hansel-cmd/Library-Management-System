@@ -17,6 +17,7 @@ public class Login_user extends JFrame implements ActionListener{
             
 	setBackground(new Color(169, 169, 169));	
         setBounds(600, 300, 600, 400);
+		setLocationRelativeTo(null);
 		
         panel = new JPanel();
 	panel.setBackground(new Color(176, 224, 230));
