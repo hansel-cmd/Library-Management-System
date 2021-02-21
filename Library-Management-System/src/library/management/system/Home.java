@@ -28,13 +28,12 @@ public class Home extends JFrame implements ActionListener{
             contentPane.add(l1);
             
             JMenuBar menuBar = new JMenuBar();
-            menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(0, 128, 0), new Color(128, 128, 128)));
-            menuBar.setBackground(Color.CYAN);
+            menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(154, 185, 223), new Color(154, 185, 223)));
+            menuBar.setBackground(new Color(154, 185, 223));
             menuBar.setBounds(0, 10, 1000, 85);
             contentPane.add(menuBar);
 
-
-            JMenu mnExit = new JMenu("Exit");
+            JMenu mnExit = new JMenu("Burger");
             mnExit.setPreferredSize(new Dimension(70, 40));
             mnExit.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
             
@@ -96,7 +95,7 @@ public class Home extends JFrame implements ActionListener{
             Image i2 = i1.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i3 = new ImageIcon(i2);
             l2 = new JLabel(i3);
-            l2.setBounds(60, 140, 159, 152);
+            l2.setBounds(55, 160, 159, 152);
             contentPane.add(l2);
 
             JLabel l3 = new JLabel("");
@@ -104,7 +103,7 @@ public class Home extends JFrame implements ActionListener{
             Image i5 = i4.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i6 = new ImageIcon(i5);
             l3 = new JLabel(i6);
-            l3.setBounds(300, 160, 134, 128);
+            l3.setBounds(305, 160, 159, 152);
             contentPane.add(l3);
 
             JLabel l4 = new JLabel("");
@@ -112,7 +111,7 @@ public class Home extends JFrame implements ActionListener{
             Image i8 = i7.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i9 = new ImageIcon(i8);
             l4 = new JLabel(i9);
-            l4.setBounds(500, 140, 225, 152);
+            l4.setBounds(535, 160, 159, 152);
             contentPane.add(l4);
 
             b1 = new JButton("Add Books");
@@ -140,7 +139,7 @@ public class Home extends JFrame implements ActionListener{
             b5.addActionListener(this);
             b5.setBackground(Color.BLACK);
             b5.setForeground(Color.WHITE);
-            b5.setBounds(790, 320, 167, 44);
+            b5.setBounds(760, 320, 167, 44);
             contentPane.add(b5);
 
             JLabel l6 = new JLabel("");
@@ -148,7 +147,7 @@ public class Home extends JFrame implements ActionListener{
             Image i14 = i13.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i15 = new ImageIcon(i14);
             l6 = new JLabel(i15);
-            l6.setBounds(790, 140, 139, 152);
+            l6.setBounds(760, 160, 159, 152);
             contentPane.add(l6);
 
             JPanel panel = new JPanel();
@@ -181,10 +180,10 @@ public class Home extends JFrame implements ActionListener{
 
             JLabel l5 = new JLabel("");
             ImageIcon i10  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/third.png"));
-            Image i11 = i10.getImage().getScaledInstance(200, 200,Image.SCALE_DEFAULT);
+            Image i11 = i10.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i12 = new ImageIcon(i11);
             l5 = new JLabel(i12);
-            l5.setBounds(60, 440, 159, 163);
+            l5.setBounds(65, 450, 159, 152);
             contentPane.add(l5);
 
             JLabel l7 = new JLabel("");
@@ -192,7 +191,7 @@ public class Home extends JFrame implements ActionListener{
             Image i17 = i16.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i18 = new ImageIcon(i17);
             l7 = new JLabel(i18);
-            l7.setBounds(562, 440, 157, 152);
+            l7.setBounds(562, 450, 159, 152);
             contentPane.add(l7);
 
             JLabel l8 = new JLabel("");
@@ -200,7 +199,7 @@ public class Home extends JFrame implements ActionListener{
             Image i21 = i20.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i22 = new ImageIcon(i17);
             l8 = new JLabel(i22);
-            l8.setBounds(313, 440, 157, 152);
+            l8.setBounds(313, 450, 159, 152);
             contentPane.add(l8);
 
             JPanel panel2 = new JPanel();

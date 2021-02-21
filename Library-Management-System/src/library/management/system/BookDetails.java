@@ -129,7 +129,7 @@ public class BookDetails extends JFrame implements ActionListener{
 	});
 
 	ImageIcon i4 = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/nineth.png"));
-        Image i5 = i4.getImage().getScaledInstance(30, 30, Image.SCALE_DEFAULT);
+        Image i5 = i4.getImage().getScaledInstance(20, 20, Image.SCALE_DEFAULT);
         ImageIcon i6 = new ImageIcon(i5);
         b2.setIcon(i6);
         b2.setForeground(new Color(199, 21, 133));
