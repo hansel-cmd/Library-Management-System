@@ -26,10 +26,12 @@ public class Login_user extends JFrame implements ActionListener{
 
 	JLabel l1 = new JLabel("Username : ");
 	l1.setBounds(124, 89, 95, 24);
+	l1.setFont(new Font("Tahoma", Font.PLAIN, 15));
 	panel.add(l1);
 
 	JLabel l2 = new JLabel("Password : ");
 	l2.setBounds(124, 124, 95, 24);
+	l2.setFont(new Font("Tahoma", Font.PLAIN, 15));
 	panel.add(l2);
 
 	textField = new JTextField();
@@ -49,16 +51,16 @@ public class Login_user extends JFrame implements ActionListener{
 	panel.add(l3);
 
 	b1 = new JButton("Login");
+	b1.setFont(new Font("Tahoma", Font.PLAIN, 15));
 	b1.addActionListener(this);
-                
 	b1.setForeground(new Color(46, 139, 87));
 	b1.setBackground(new Color(250, 250, 210));
 	b1.setBounds(149, 181, 113, 39);
 	panel.add(b1);
 		
-        b2 = new JButton("SignUp");
+	b2 = new JButton("SignUp");
 	b2.addActionListener(this);
-	
+	b2.setFont(new Font("Tahoma", Font.PLAIN, 15));
 	b2.setForeground(new Color(139, 69, 19));
 	b2.setBackground(new Color(255, 235, 205));
 	b2.setBounds(289, 181, 113, 39);
@@ -66,8 +68,8 @@ public class Login_user extends JFrame implements ActionListener{
 
 	b3 = new JButton("Forgot Password");
 	b3.addActionListener(this);
-	
-        b3.setForeground(new Color(205, 92, 92));
+	b3.setFont(new Font("Tahoma", Font.PLAIN, 15));
+    b3.setForeground(new Color(205, 92, 92));
 	b3.setBackground(new Color(253, 245, 230));
 	b3.setBounds(199, 231, 179, 39);
 	panel.add(b3);
