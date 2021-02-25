@@ -2,8 +2,12 @@ package library.management.system;
 
 import javax.swing.*;
 import javax.swing.border.*;
+import javax.swing.text.html.ImageView;
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
+
 
 public class Home extends JFrame implements ActionListener{
 
@@ -23,22 +27,21 @@ public class Home extends JFrame implements ActionListener{
             setLocationRelativeTo(null);
 
             JLabel l1 = new JLabel("Library Management System");
-            l1.setForeground(new Color(204, 51, 102));
+            l1.setForeground(new Color(0, 153, 0));
             l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
             l1.setBounds(268, 8, 701, 80);
             contentPane.add(l1);
             
             JMenuBar menuBar = new JMenuBar();
-            menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(154, 185, 223), new Color(154, 185, 223)));
-            menuBar.setBackground(new Color(154, 185, 223));
+            menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 102), new Color(255, 255, 102)));
+            menuBar.setBackground(new Color(255, 255, 102));
             menuBar.setBounds(0, 10, 1000, 85);
             contentPane.add(menuBar);
 
-            JMenu mnExit = new JMenu("Burger");
+            JMenu mnExit = new JMenu("Close");
             mnExit.setPreferredSize(new Dimension(70, 40));
-            mnExit.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
-            
-            
+            mnExit.setFont(new Font("Trebuchet MS", Font.BOLD, 25));
+
             JMenuItem mntmLogout = new JMenuItem("Logout");
             mntmLogout.setPreferredSize(new Dimension(100, 40));
             mntmLogout.setBackground(new Color(211, 211, 211));
@@ -117,28 +120,32 @@ public class Home extends JFrame implements ActionListener{
 
             b1 = new JButton("Add Books");
             b1.addActionListener(this);
-            b1.setBackground(Color.BLACK);
+            b1.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b1.setBackground(new Color(255, 0, 94));
             b1.setForeground(Color.WHITE);
             b1.setBounds(60, 320, 159, 44);
             contentPane.add(b1);
 
             b2 = new JButton("Issue Book");
             b2.addActionListener(this);
-            b2.setBackground(Color.BLACK);
+            b2.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b2.setBackground(new Color(255, 0, 94));
             b2.setForeground(Color.WHITE);
             b2.setBounds(313, 320, 139, 44);
             contentPane.add(b2);
 
             b3 = new JButton("Add Student");
             b3.addActionListener(this);
-            b3.setBackground(Color.BLACK);
+            b3.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b3.setBackground(new Color(255, 0, 94));
             b3.setForeground(Color.WHITE);
             b3.setBounds(532, 320, 167, 44);
             contentPane.add(b3);
 
             b5 = new JButton("Return Book");
             b5.addActionListener(this);
-            b5.setBackground(Color.BLACK);
+            b5.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b5.setBackground(new Color(255, 0, 94));
             b5.setForeground(Color.WHITE);
             b5.setBounds(760, 320, 167, 44);
             contentPane.add(b5);
@@ -158,25 +165,29 @@ public class Home extends JFrame implements ActionListener{
             panel.setBackground(Color.WHITE);
             contentPane.add(panel);
 
+
             b4 = new JButton("Rent Details");
             b4.addActionListener(this);
-            b4.setBackground(Color.BLACK);
+            b4.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b4.setBackground(new Color(255, 0, 94));
             b4.setForeground(Color.WHITE);
-            b4.setBounds(76, 620, 143, 41);
+            b4.setBounds(195, 620, 143, 41);
             contentPane.add(b4);
 
             b6 = new JButton("Book Details");
             b6.addActionListener(this);
-            b6.setBackground(Color.BLACK);
+            b6.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b6.setBackground(new Color(255, 0, 94));
             b6.setForeground(Color.WHITE);
-            b6.setBounds(562, 620, 159, 41);
+            b6.setBounds(650, 620, 159, 41);
             contentPane.add(b6);
 
             b7 = new JButton("Student Details");
             b7.addActionListener(this);
-            b7.setBackground(Color.BLACK);
+            b7.setFont(new Font("Papyrus", Font.BOLD, 15));
+            b7.setBackground(new Color(255, 0, 94));
             b7.setForeground(Color.WHITE);
-            b7.setBounds(313, 620, 159, 41);
+            b7.setBounds(420, 620, 159, 41);
             contentPane.add(b7);
 
             JLabel l5 = new JLabel("");
@@ -184,23 +195,23 @@ public class Home extends JFrame implements ActionListener{
             Image i11 = i10.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i12 = new ImageIcon(i11);
             l5 = new JLabel(i12);
-            l5.setBounds(65, 450, 159, 152);
+            l5.setBounds(180, 450, 159, 152);
             contentPane.add(l5);
 
             JLabel l7 = new JLabel("");
-            ImageIcon i16  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/seventh.png"));
+            ImageIcon i16  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/ib.png"));
             Image i17 = i16.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
             ImageIcon i18 = new ImageIcon(i17);
             l7 = new JLabel(i18);
-            l7.setBounds(562, 450, 159, 152);
+            l7.setBounds(650, 450, 159, 152);
             contentPane.add(l7);
 
             JLabel l8 = new JLabel("");
-            ImageIcon i20  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/seventh.png"));
+            ImageIcon i20  = new ImageIcon(ClassLoader.getSystemResource("library/management/system/icons/si.png"));
             Image i21 = i20.getImage().getScaledInstance(150, 150,Image.SCALE_DEFAULT);
-            ImageIcon i22 = new ImageIcon(i17);
+            ImageIcon i22 = new ImageIcon(i21);
             l8 = new JLabel(i22);
-            l8.setBounds(313, 450, 159, 152);
+            l8.setBounds(420, 450, 159, 152);
             contentPane.add(l8);
 
             JPanel panel2 = new JPanel();
@@ -257,4 +268,5 @@ public class Home extends JFrame implements ActionListener{
             }
             
         }
+
 }
