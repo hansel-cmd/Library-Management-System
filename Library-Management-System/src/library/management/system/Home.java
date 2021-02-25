@@ -19,7 +19,7 @@ public class Home extends JFrame implements ActionListener{
 	}
         
         public Home() {
-	
+
             setBounds(400, 150, 1000, 800);
             contentPane = new JPanel();
             setContentPane(contentPane);
@@ -31,15 +31,15 @@ public class Home extends JFrame implements ActionListener{
             l1.setFont(new Font("Segoe UI Semilight", Font.BOLD, 30));
             l1.setBounds(268, 8, 701, 80);
             contentPane.add(l1);
-            
+
             JMenuBar menuBar = new JMenuBar();
             menuBar.setBorder(new EtchedBorder(EtchedBorder.LOWERED, new Color(255, 255, 102), new Color(255, 255, 102)));
             menuBar.setBackground(new Color(255, 255, 102));
             menuBar.setBounds(0, 10, 1000, 85);
             contentPane.add(menuBar);
 
-            JMenu mnExit = new JMenu("Close");
-            mnExit.setPreferredSize(new Dimension(70, 40));
+            JMenu mnExit = new JMenu("Menu");
+            mnExit.setPreferredSize(new Dimension(75, 40));
             mnExit.setFont(new Font("Trebuchet MS", Font.BOLD, 25));
 
             JMenuItem mntmLogout = new JMenuItem("Logout");
@@ -49,7 +49,7 @@ public class Home extends JFrame implements ActionListener{
             mntmLogout.setBounds(95, 95, 95, 95);
             mntmLogout.addActionListener(this);
             mnExit.add(mntmLogout);
-            
+
             JMenuItem mntmExit = new JMenuItem("Exit");
             mntmExit.setPreferredSize(new Dimension(100, 40));
             mntmExit.setForeground(new Color(105, 105, 105));
@@ -74,7 +74,7 @@ public class Home extends JFrame implements ActionListener{
 
 //            JMenu mnRecord = new JMenu("Record");
 //            mnRecord.setFont(new Font("Trebuchet MS", Font.BOLD, 17));
-            
+
 
 //            JMenuItem bookdetails = new JMenuItem("Book Details");
 //            bookdetails.addActionListener(this);
@@ -220,7 +220,7 @@ public class Home extends JFrame implements ActionListener{
             panel2.setBounds(20, 420, 950, 270);
             panel2.setBackground(Color.WHITE);
             contentPane.add(panel2);
-            
+
             getContentPane().setBackground(Color.WHITE);
             contentPane.setBackground(Color.WHITE);
 	}
