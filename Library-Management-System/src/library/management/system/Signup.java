@@ -33,6 +33,7 @@ public class Signup extends JFrame implements ActionListener{
 	setContentPane(contentPane);
         contentPane.setBackground(Color.WHITE);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel lblUsername = new JLabel("Username :");
 	lblUsername.setForeground(Color.DARK_GRAY);

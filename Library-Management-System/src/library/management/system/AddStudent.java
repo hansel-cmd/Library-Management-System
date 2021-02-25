@@ -30,6 +30,7 @@ public class AddStudent extends JFrame implements ActionListener{
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JLabel l1 = new JLabel("Student_id");
 	l1.setForeground(new Color(25, 25, 112));

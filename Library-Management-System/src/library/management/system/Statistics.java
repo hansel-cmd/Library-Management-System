@@ -50,6 +50,7 @@ public class Statistics extends JFrame{
 	contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 	setContentPane(contentPane);
 	contentPane.setLayout(null);
+	setLocationRelativeTo(null);
 
 	JScrollPane scrollPane = new JScrollPane();
 	scrollPane.setBounds(40, 51, 708, 217);

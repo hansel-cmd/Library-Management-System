@@ -9,6 +9,6 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Jar" level="project" />
     <orderEntry type="library" name="Jar1" level="project" />
-    <orderEntry type="library" name="mysql-connector-java-8.0.22" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-8.0.221" level="project" />
   </component>
 </module>
