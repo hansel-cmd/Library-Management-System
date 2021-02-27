@@ -246,9 +246,15 @@ public class ReturnBook extends JFrame implements ActionListener {
 
             }
             if (ae.getSource() == b2) {
+
                 JDialog.setDefaultLookAndFeelDecorated(true);
-                JOptionPane.showMessageDialog(null, "Processing..");
-                delete();
+                if (dateChooser.getDate() == null) {
+                    JOptionPane.showMessageDialog(null, "All fields must be filled.");
+                } else {
+                    JOptionPane.showMessageDialog(null, "Processing..");
+                    delete();
+                }
+
             }
             if (ae.getSource() == b3) {
                 this.setVisible(false);
