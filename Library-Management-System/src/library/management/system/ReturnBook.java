@@ -27,30 +27,31 @@ public class ReturnBook extends JFrame implements ActionListener {
     }
 
     public void delete() {
-        try {
-            conn con = new conn();
-            String sql = "insert into returnBook(book_id, student_id, bname, sname,course, branch, dateOfIssue, dateOfReturn) values(?, ?, ?, ?, ?, ?, ?, ?)";
-            PreparedStatement st = con.c.prepareStatement(sql);
-            st.setString(1, textField.getText());
-            st.setString(2, textField_1.getText());
-            st.setString(3, textField_2.getText());
-            st.setString(4, textField_3.getText());
-            st.setString(5, textField_4.getText());
-            st.setString(6, textField_5.getText());
-            st.setString(7, textField_6.getText());
-
-            st.setString(8, ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText());
-            st.executeUpdate();
-        } catch (SQLException e) {
-            JOptionPane.showMessageDialog(null, e);
-            e.printStackTrace();
-        }
-
 
         try {
             JDialog.setDefaultLookAndFeelDecorated(true);
             int x = JOptionPane.showConfirmDialog(null, "Return Book?", "Confirm", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
             if (x == JOptionPane.YES_OPTION) {
+                try {
+                    conn con = new conn();
+                    String sql = "insert into returnBook(book_id, student_id, bname, sname,course, branch, dateOfIssue, dateOfReturn) values(?, ?, ?, ?, ?, ?, ?, ?)";
+                    PreparedStatement st = con.c.prepareStatement(sql);
+                    st.setString(1, textField.getText());
+                    st.setString(2, textField_1.getText());
+                    st.setString(3, textField_2.getText());
+                    st.setString(4, textField_3.getText());
+                    st.setString(5, textField_4.getText());
+                    st.setString(6, textField_5.getText());
+                    st.setString(7, textField_6.getText());
+
+                    st.setString(8, ((JTextField) dateChooser.getDateEditor().getUiComponent()).getText());
+                    st.executeUpdate();
+                } catch (SQLException e) {
+                    JOptionPane.showMessageDialog(null, e);
+                    e.printStackTrace();
+                }
+
+
                 conn con = new conn();
                 String sql = "delete from issueBook where book_id=?";
                 PreparedStatement st = con.c.prepareStatement(sql);
