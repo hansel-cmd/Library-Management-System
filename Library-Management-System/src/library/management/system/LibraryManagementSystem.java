@@ -10,7 +10,7 @@ public class LibraryManagementSystem extends JFrame implements ActionListener{
         JButton b1;
         
         public LibraryManagementSystem() {
-		
+                super("Library Management System");
                 setSize(1366,390);
                 setLayout(null);
                 setLocationRelativeTo(null);
